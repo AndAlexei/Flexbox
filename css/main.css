@@ -318,11 +318,41 @@ body .portfolio {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-bottom: 30px;
+}
+
+body .portfolio .btn {
+  margin: 40px 0;
 }
 
 body .portfolio h1 {
+  margin: 50px 0;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #a7a5a5;
   color: gray;
-  text-decoration: underline;
+}
+
+body .portfolio .controls {
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 25px;
+  border-top: 3px solid #a7a5a5;
+  border-bottom: 3px solid #a7a5a5;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+body .portfolio .controls button {
+  color: #fc635e;
+  background: transparent;
+  border: none;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+body .portfolio .controls button:hover {
+  color: #d10f0f;
+  cursor: pointer;
 }
 
 body .portfolio .container-filter {
@@ -337,10 +367,58 @@ body .portfolio .container-filter {
       flex-wrap: wrap;
 }
 
+body .portfolio .container-filter #ex1 {
+  background-image: url(../img/portfolio/1.png);
+}
+
+body .portfolio .container-filter #ex2 {
+  background-image: url(../img/portfolio/2.png);
+}
+
+body .portfolio .container-filter #ex3 {
+  background-image: url(../img/portfolio/3.png);
+}
+
+body .portfolio .container-filter #ex4 {
+  background-image: url(../img/portfolio/4.png);
+}
+
+body .portfolio .container-filter #ex5 {
+  background-image: url(../img/portfolio/5.png);
+}
+
+body .portfolio .container-filter #ex6 {
+  background-image: url(../img/portfolio/6.png);
+}
+
 body .portfolio .container-filter div {
-  width: 200px;
-  height: 150px;
-  background: gray;
-  border: 1px solid #000;
+  background-size: cover;
+  background-position: center center;
+  margin: 10px;
+  width: 250px;
+  height: 180px;
+}
+
+body .portfolio .container-filter div .fil {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  display: none;
+  position: relative;
+  margin: 0;
+  background: url(../img/portfolio/plus.png) rgba(255, 72, 72, 0.75);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body .portfolio .container-filter div .fil p {
+  margin: 0;
+  padding: 10px;
+}
+
+body .portfolio .container-filter div:hover .fil {
+  cursor: pointer;
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */
